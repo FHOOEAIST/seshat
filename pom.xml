@@ -55,9 +55,9 @@
     </properties>
 
     <scm>
+        <connection>scm:git:git@github.com:FHOOEAIST/seshat.git</connection>
         <url>https://github.com/FHOOEAIST/seshat</url>
-        <connection>scm:git:ssh://git@github.com:FHOOEAIST/seshat.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:FHOOEAIST/seshat.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:FHOOEAIST/seshat.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
     <distributionManagement>
