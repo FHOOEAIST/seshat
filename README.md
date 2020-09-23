@@ -88,7 +88,7 @@ If you have any questions, please checkout our [FAQ](https://fhooeaist.github.io
 
 ## Contributing
 
-**First make sure to read our [general contribution guidelines](https://fhooeaist.github.io/contributing.html).**
+**First make sure to read our [general contribution guidelines](https://fhooeaist.github.io/CONTRIBUTING.html).**
 
 In addition to that, the following applies to this repository:
 
