@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ Copyright (c) 2020 the original author or authors.
+  ~ DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+  ~
+  ~ This Source Code Form is subject to the terms of the Mozilla Public
+  ~ License, v. 2.0. If a copy of the MPL was not distributed with this
+  ~ file, You can obtain one at https://mozilla.org/MPL/2.0/.
+  ~
+  -->
+
+<faqs xmlns="http://maven.apache.org/FML/1.0.1"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://maven.apache.org/FML/1.0.1 http://maven.apache.org/xsd/fml-1.0.1.xsd"
+>
+    <part id="General">
+        <faq id="Why yet another utility framework">
+            <question>Why yet another logging framework?</question>
+            <answer>
+                <p>
+                    Because logging in Java is a MASSIVE drain on resources. The original Log4J (not log4j2 mind you) increased
+                    the average run of a machinelearning run by <strong>500%</strong> when the <strong>logging was turned off</strong>.
+                    Yes it was worse when you decided to turn it on.
+                </p>
+                <p>
+                    This nice review <a href="https://www.sitepoint.com/which-java-logging-framework-has-the-best-performance/">here</a>
+                    proves that any self implemented logging framework can easily outperform the default java loggers.
+                </p>
+            </answer>
+        </faq>
+    </part>
+</faqs>
