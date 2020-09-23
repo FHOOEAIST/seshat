@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"science.aist.seshat.log4test","c":"CollectingLoggerFactory","l":"CollectingLoggerFactory()","url":"%3Cinit%3E()"},{"p":"science.aist.seshat.log4test","c":"CollectingLoggerFactory","l":"getLogger(Class<?>)","url":"getLogger(java.lang.Class)"},{"p":"science.aist.seshat.log4test.domain","c":"LogEntry","l":"LogEntry()","url":"%3Cinit%3E()"}]

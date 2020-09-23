@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"science.aist.seshat","l":"AbstractLoggerFactoryTest"},{"l":"All Classes","url":"allclasses-index.html"},{"p":"science.aist.seshat","l":"ClassFinderTest"},{"p":"science.aist.seshat","l":"DefaultLoggerTest"},{"p":"science.aist.seshat.test","l":"MyOtherTestMain"},{"p":"science.aist.seshat.test","l":"MyTestMain"}]
