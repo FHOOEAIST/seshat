@@ -35,7 +35,7 @@ class DefaultLogger implements Logger {
             sysPropertyLogLevel = science.aist.seshat.LogLevel.valueOf(systemLogLevel);
         } catch (Exception e) { // Just catch any exception if the log level could not have been extracted
             System.err.println("Could not load log level from system property: " + e.getMessage());
-            sysPropertyLogLevel = LogLevel.WARN;
+            sysPropertyLogLevel = LogLevel.INFO;
         }
     }
 

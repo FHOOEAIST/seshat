@@ -6,7 +6,7 @@ The changelog should give you a quick overview of what change between the differ
 
 ### Bug Fix
 
-- [7](https://github.com/FHOOEAIST/seshat/issues/7) - `sysPropertyLogLevel` is default initialized with `WARN`.
+- [7](https://github.com/FHOOEAIST/seshat/issues/7) - `sysPropertyLogLevel` is default initialized with `INFO`.
 
 ## Version 1.0.0
 
