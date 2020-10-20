@@ -104,9 +104,13 @@ This Source Code Form is subject to the terms of the Mozilla Public
 License, v. 2.0. If a copy of the MPL was not distributed with this
 file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FFHOOEAIST%2Fseshat.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FFHOOEAIST%2Fseshat?ref=badge_large)
+
 ## Research
 
 If you are going to use this project as part of a research paper, we would ask you to reference this project by citing
 it. 
 
 [![DOI](https://zenodo.org/badge/296271907.svg)](https://zenodo.org/badge/latestdoi/296271907)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FFHOOEAIST%2Fseshat.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FFHOOEAIST%2Fseshat?ref=badge_shield)
