@@ -46,9 +46,6 @@
 
         <!-- sonar variables -->
         <jacoco.plugin.version>0.8.4</jacoco.plugin.version>
-        <project.jacoco.ut.reportPath>${user.dir}/target/jacoco.exec</project.jacoco.ut.reportPath>
-        <project.jacoco.it.reportPath>${user.dir}/target/jacoco-it.exec</project.jacoco.it.reportPath>
-        <sonar.jacoco.reportPaths>${project.jacoco.ut.reportPath},${project.jacoco.it.reportPath}</sonar.jacoco.reportPaths>
         <sonar.java.libraries>${project.build.directory}/dependency</sonar.java.libraries>
         <sonar-jacoco-listeners.version>5.14.0.18788</sonar-jacoco-listeners.version>
     </properties>
