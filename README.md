@@ -1,11 +1,11 @@
 # SESHAT
 
+[![javadoc](https://javadoc.io/badge2/science.aist.seshat/seshat/javadoc.svg)](https://javadoc.io/doc/science.aist.seshat/seshat) [![Maven Central](https://img.shields.io/maven-central/v/science.aist.seshat/seshat.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22science.aist.seshat%22%20AND%20a:%22seshat%22) [![GitHub release](https://img.shields.io/github/v/release/fhooeaist/seshat.svg)](https://github.com/fhooeaist/seshat/releases) [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FFHOOEAIST%2Fseshat.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FFHOOEAIST%2Fseshat?ref=badge_shield)
+
 Seshat is a logging framework with the following core considerations:
 
 - High performance / low overhead for logging
 - Providing a uniform interface enabling dynamic interchange of existing logger frameworks
-
-[![javadoc](https://javadoc.io/badge2/science.aist.seshat/seshat/javadoc.svg)](https://javadoc.io/doc/science.aist.seshat/seshat) [![Maven Central](https://img.shields.io/maven-central/v/science.aist.seshat/seshat.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22science.aist.seshat%22%20AND%20a:%22seshat%22) [![GitHub release](https://img.shields.io/github/v/release/fhooeaist/seshat.svg)](https://github.com/fhooeaist/seshat/releases) [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FFHOOEAIST%2Fseshat.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FFHOOEAIST%2Fseshat?ref=badge_shield)
 
 ## Getting Started
 
