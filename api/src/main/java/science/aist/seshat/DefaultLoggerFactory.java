@@ -16,7 +16,7 @@ package science.aist.seshat;
  * @author Andreas Pointner
  * @since 1.0
  */
-class DefaultLoggerFactory extends AbstractLoggerFactory {
+class DefaultLoggerFactory implements LoggerFactory {
     @Override
     public Logger getLogger(Class<?> clazz) {
         return new DefaultLogger();

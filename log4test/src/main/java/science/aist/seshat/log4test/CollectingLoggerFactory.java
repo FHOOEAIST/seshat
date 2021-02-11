@@ -10,8 +10,8 @@
 
 package science.aist.seshat.log4test;
 
-import science.aist.seshat.AbstractLoggerFactory;
 import science.aist.seshat.Logger;
+import science.aist.seshat.LoggerFactory;
 
 /**
  * <p>Logger Factory for the Collecting Logger</p>
@@ -19,7 +19,7 @@ import science.aist.seshat.Logger;
  * @author Andreas Pointner
  * @since 1.0
  */
-public class CollectingLoggerFactory extends AbstractLoggerFactory {
+public class CollectingLoggerFactory implements LoggerFactory {
 
     /**
      * Only using a single global instance of the collecting logger

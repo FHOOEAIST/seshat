@@ -19,7 +19,6 @@ package science.aist.seshat;
  */
 @SuppressWarnings({"unused", "RedundantSuppression"})
 public interface Logger {
-
     /**
      * <p>Returns a Logger instance</p>
      * <p>Uses StalkWalker to get the caller class and calls {@link Logger#getInstance(Class)}</p>
@@ -52,7 +51,7 @@ public interface Logger {
     @SuppressWarnings("java:S3252")
     // we want to call DefaultLogger static method instead Abstract, because method could be overwritten in other Default Loggers.
     static Logger getInstance(Class<?> clazz) {
-        return AbstractLoggerFactory.getLoggerFactory(clazz).getLogger(clazz);
+        return FactoryLoader.getLoggerFactory().getLogger(clazz);
     }
 
     /**
