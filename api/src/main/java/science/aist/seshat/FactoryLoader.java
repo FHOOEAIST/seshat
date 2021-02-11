@@ -30,8 +30,8 @@ public class FactoryLoader {
      * Uses the {@link ServiceLoader} to load a {@link LoggerFactory} instance. If {@link ServiceLoader} does not return
      * any instances, the {@link DefaultLoggerFactory} is used. If {@link ServiceLoader} finds multiple {@link LoggerFactory}
      * instances the first instance ({@link ServiceLoader#findFirst()} will be used. Note: The instance of the
-     * {@link LoggerFactory} that is received will be cached inside this class, and on further class this cached instance
-     * will be used.
+     * {@link LoggerFactory} that is received will be cached inside this class, and on further usage this cached
+     * instance is used.
      *
      * @return the logger factory instance
      */
