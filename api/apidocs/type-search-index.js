@@ -1,1 +1,1 @@
-typeSearchIndex = [{"p":"science.aist.seshat","l":"AbstractLoggerFactory"},{"l":"All Classes","url":"allclasses-index.html"},{"p":"science.aist.seshat","l":"Logger"},{"p":"science.aist.seshat","l":"LoggerFactory"},{"p":"science.aist.seshat","l":"LogLevel"}]
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"science.aist.seshat","l":"FactoryLoader"},{"p":"science.aist.seshat","l":"Logger"},{"p":"science.aist.seshat","l":"LoggerFactory"},{"p":"science.aist.seshat","l":"LogLevel"}]
