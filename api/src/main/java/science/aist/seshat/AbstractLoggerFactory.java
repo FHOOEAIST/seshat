@@ -12,9 +12,7 @@ package science.aist.seshat;
 
 import lombok.SneakyThrows;
 
-import java.lang.reflect.Modifier;
-import java.util.List;
-import java.util.stream.Collectors;
+import java.util.ServiceLoader;
 
 /**
  * <p>Factory Pattern implementation for Logger</p>
@@ -38,19 +36,9 @@ public abstract class AbstractLoggerFactory implements LoggerFactory {
      */
     @SneakyThrows
     public static LoggerFactory getLoggerFactory(Class<?> caller) {
-        if (factoryInstance == null) {
-            List<Class<? extends AbstractLoggerFactory>> collect = ClassFinder.findClasses(caller.getClassLoader(), AbstractLoggerFactory.class)
-                    .stream().filter(clazz -> !clazz.isInterface() && !Modifier.isAbstract(clazz.getModifiers())) // only use factories that we can instantiate
-                    .filter(clazz -> !clazz.equals(DefaultLoggerFactory.class)) // ignore the DefaultLoggerFactory, as this is always found
-                    .collect(Collectors.toList());
-            if (collect.size() != 1) {
-                factoryInstance = new DefaultLoggerFactory();
-                factoryInstance.getLogger(AbstractLoggerFactory.class)
-                        .error(collect.isEmpty() ? "No Logger Bindings were found!" : "Multiple Logger Bindings were found!");
-            } else {
-                factoryInstance = collect.get(0).getDeclaredConstructor().newInstance();
-            }
-        }
+        if (factoryInstance == null)
+            factoryInstance = ServiceLoader.load(LoggerFactory.class).findFirst()
+                    .orElseGet(DefaultLoggerFactory::new);
         return factoryInstance;
     }
 }
