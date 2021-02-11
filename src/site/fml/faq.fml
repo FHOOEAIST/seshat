@@ -34,17 +34,17 @@
             <answer>
                 <p>
                     Seshat uses the java <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html">ServiceLoader</a>
-                    concept in order to load different LoggerFactory implementation. This means that if you want to
+                    concept in order to load different LoggerFactory implementations. This means that, if you want to
                     provide your own logger, you need to do the following steps:
                 </p>
                 <ol>
                     <li>Implement a custom LoggerFactory that implements the science.aist.seshat.LoggerFactory interface.</li>
                     <li>
-                        Register your own factory as a Service. This can be done by creating a META-INF/services folder
-                        inside your module. In this folder put a file with the name science.aist.seshat.LoggerFactory.
-                        In this file you write your fully qualified class name e.g. com.mycompany.MyLoggerFactory in the
-                        first line of the file. Java will then automatically find this factory as a Service, and it will
-                        be loaded from our service loaded and used as a LoggerFactory.
+                        Register your own factory as a Service. This is achieved by creating a META-INF/services folder
+                        inside your module. Put a file with the name science.aist.seshat.LoggerFactory in this folder
+                        and write your fully qualified class name into the first line (e.g. com.mycompany.MyLoggerFactory).
+                        Java will then automatically find this factory as a Service, and it will be loaded from our
+                        service loader and used as a LoggerFactory.
                     </li>
                 </ol>
             </answer>
