@@ -16,7 +16,7 @@ package science.aist.seshat;
  * @author Andreas Pointner
  * @since 1.0
  */
-public class Log4jLoggerFactory extends AbstractLoggerFactory {
+public class Log4jLoggerFactory implements LoggerFactory {
     @Override
     public Logger getLogger(Class<?> clazz) {
         return new Log4jLogger(clazz);

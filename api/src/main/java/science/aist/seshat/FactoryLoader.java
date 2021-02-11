@@ -21,21 +21,20 @@ import java.util.ServiceLoader;
  * @since 1.0
  */
 @SuppressWarnings("squid:S3032" /*We want to use the class loader from the calling class*/)
-public abstract class AbstractLoggerFactory implements LoggerFactory {
+public class FactoryLoader {
     private static LoggerFactory factoryInstance;
 
-    protected AbstractLoggerFactory() {
+    private FactoryLoader() {
 
     }
 
     /**
      * Does a classpath scan to retrieve a logger factory implementation
      *
-     * @param caller the caller class
      * @return the logger factory instance
      */
     @SneakyThrows
-    public static LoggerFactory getLoggerFactory(Class<?> caller) {
+    public static LoggerFactory getLoggerFactory() {
         if (factoryInstance == null)
             factoryInstance = ServiceLoader.load(LoggerFactory.class).findFirst()
                     .orElseGet(DefaultLoggerFactory::new);

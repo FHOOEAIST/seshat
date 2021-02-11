@@ -14,22 +14,24 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 /**
- * <p>Tests if the Logger Factory correctly initializes the Logge</p>
+ * <p>Test class for {@link FactoryLoader}</p>
  *
  * @author Andreas Pointner
  * @since 1.0
  */
-public class AbstractLoggerFactoryTest {
+
+public class FactoryLoaderTest {
+
     @Test
     public void testGetDefaultLogger() {
         // given
 
         // when
-        Logger defaultLogger = AbstractLoggerFactory.getLoggerFactory(getClass()).getLogger();
+        Logger defaultLogger = FactoryLoader.getLoggerFactory().getLogger();
 
         // then
         Assert.assertNotNull(defaultLogger);
-        Assert.assertEquals(defaultLogger.getClass(), Log4jLogger.class);
+        Assert.assertEquals(defaultLogger.getClass(), DefaultLogger.class);
     }
 
     @Test
@@ -37,11 +39,11 @@ public class AbstractLoggerFactoryTest {
         // given
 
         // when
-        Logger defaultLogger = AbstractLoggerFactory.getLoggerFactory(getClass()).getLogger(getClass());
+        Logger defaultLogger = FactoryLoader.getLoggerFactory().getLogger(getClass());
 
         // then
         Assert.assertNotNull(defaultLogger);
-        Assert.assertEquals(defaultLogger.getClass(), Log4jLogger.class);
+        Assert.assertEquals(defaultLogger.getClass(), DefaultLogger.class);
     }
 
     @Test
@@ -49,10 +51,10 @@ public class AbstractLoggerFactoryTest {
         // given
 
         // when
-        Logger defaultLogger = AbstractLoggerFactory.getLoggerFactory(getClass()).getLogger(this);
+        Logger defaultLogger = FactoryLoader.getLoggerFactory().getLogger(this);
 
         // then
         Assert.assertNotNull(defaultLogger);
-        Assert.assertEquals(defaultLogger.getClass(), Log4jLogger.class);
+        Assert.assertEquals(defaultLogger.getClass(), DefaultLogger.class);
     }
 }
