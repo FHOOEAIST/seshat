@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 the original author or authors.
+ * Copyright (c) 2021 the original author or authors.
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public
@@ -10,15 +10,13 @@
 
 package science.aist.seshat;
 
-import lombok.SneakyThrows;
-
 import java.util.ServiceLoader;
 
 /**
- * <p>Factory Pattern implementation for Logger</p>
+ * <p>Factory Loader class which uses {@link ServiceLoader} to find {@link LoggerFactory}s.</p>
  *
  * @author Andreas Pointner
- * @since 1.0
+ * @since 1.1
  */
 @SuppressWarnings("squid:S3032" /*We want to use the class loader from the calling class*/)
 public class FactoryLoader {
@@ -29,11 +27,14 @@ public class FactoryLoader {
     }
 
     /**
-     * Does a classpath scan to retrieve a logger factory implementation
+     * Uses the {@link ServiceLoader} to load a {@link LoggerFactory} instance. If {@link ServiceLoader} does not return
+     * any instances, the {@link DefaultLoggerFactory} is used. If {@link ServiceLoader} finds multiple {@link LoggerFactory}
+     * instances the first instance ({@link ServiceLoader#findFirst()} will be used. Note: The instance of the
+     * {@link LoggerFactory} that is received will be cached inside this class, and on further class this cached instance
+     * will be used.
      *
      * @return the logger factory instance
      */
-    @SneakyThrows
     public static LoggerFactory getLoggerFactory() {
         if (factoryInstance == null)
             factoryInstance = ServiceLoader.load(LoggerFactory.class).findFirst()
